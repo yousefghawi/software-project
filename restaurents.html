@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>restaurants</title>
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script type="text/javascript" src="signUp.js"></script>
+        <link rel="stylesheet" href="restaurent.css"/>
+    </head>
+
+    <body>
+        <header style="background-color: dodgerblue; padding-top: 10px; position: fixed; width: 100%; height: 10%;">
+            <div class="p-2">
+                <a href="index.html"><h2 class="float-start text-white" style="padding-left: 15px;">delivery.com</h2></a>
+                
+                    <input type="text" class="form-control rounded searchArea" placeholder="search the menu"/>
+                    
+                    
+                
+                <span id="goLogin" >
+                    <a href="#" onclick="logIn()"><span class="border border-primary rounded-pill text-center">Log in</span></a>
+                </span>    
+            </div>    
+        </header>
+
+        <div class="container text-center rounded card" id="logIn">
+            <div> <a id="close" onclick="closeLogin()"><i class="fa fa-times float-end m-3"></i></a>
+            </div>
+             <form>
+             
+                 <br>
+                 <h6 class="mt-3">Log in into your account</h6>
+                 <a href="#" onclick="signUp()">New to delivery.com?Sign up here</a>
+                 <br><br>
+                 <input type="email" class="form-control" required placeholder="Email Adress"/>
+                 
+                 <input type="password" class="form-control" required placeholder="Password"/>
+                 
+                 <input type="submit" onclick="closeLogin()" class="form-control bg-primary text-white" id="submit" value="Log In" />
+                 
+                 <input type="checkbox" id="staySigned" name="staySigned" />
+                 
+                 <label for="staySigned" class="text-muted">Keep me logged in</label>
+                 
+                 <a href="#" id="forgetPassword">Forget password?</a>
+                 
+                 <p> By clicking on "Log In" you agree to the <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a> of delivery.com</p>
+             </form>
+ 
+         </div>
+
+         <div class="container text-center rounded card" id="signUp">
+             <div>
+             <a id="close" onclick="closeSignup()"><i class="fa fa-times float-end m-3"></i></a>
+             </div>
+             <form>
+                 <br>    
+                 <h5 class="mt-3 logo">delivery.com</h5>
+                 <h6>Sign up to continue</h6>
+                 <a href="#"  onclick="logIn()">Already have an account? Log in here</a>
+                 <br><br>
+                 <input type="text" class="form-control" placeholder="First name" required/>
+                 <input type="text" class="form-control" placeholder="Last name" required/>
+                 <input type="email" class="form-control" placeholder="Email Address" required/>
+                 <input type="password" class="form-control" placeholder="Password" required/>
+                 <input type="submit" value="Sign Up" onclick="closeSignup()" class="form-control bg-primary text-white" />
+                 
+                 <input type="checkbox" id="staySigned" name="staySigned" />
+                 
+                 <label for="staySigned" class="text-muted">Keep me logged in</label>
+                 
+                 <p> By clicking on "Sign Up" you agree to the <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a> of delivery.com</p>
+             
+             </form>
+        </div>       
+        
+        <div class="navList">
+                  <ul>
+                    <li class="active">
+                      <a   href="#"><span class="fa fa-hamburger"><span> food</span></span></a>
+                    </li>
+                    <li>
+                      <a class="text-muted" href="#"><span  class="fa-solid fa-martini-glass"><span> drink</span></span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="text-muted" href="#"><span class="fa fa-shopping-cart "><span> market</span></span></a>
+                    </li>
+                  </ul>
+              
+        </div> 
+        
+
+        <a href="menu.html" class="goToMenu">
+        <div class="card" style="display: block; float: left ;height: 20%;">
+            
+            <div style="width: 45%; ">
+                <img class="float-start" src="https://scontent.fjrs28-1.fna.fbcdn.net/v/t39.30808-6/313435159_449871183927776_8200330418771861640_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_ohc=cEXBu2Q20nEQ7kNvgHhrqAu&_nc_ht=scontent.fjrs28-1.fna&cb_e2o_trans=t&oh=00_AYDWSoaZeicARJhRw6MLKcHqdgtoFH_vp1De7wN8zwtTHw&oe=66532690" height="100%" width="20%"/>
+                <h3 class="float-start " style="margin: 5px 0 0 5px;">Burgineer</h3>
+            </div>
+            <div>
+                <div style="display: block; width: 100%;">
+                    <i class="fa-solid fa-star fa-2xs" style="color: #ffd43b;"></i>
+                    <i class="fa-solid fa-star fa-2xs" style="color: #ffd43b;"></i>
+                    <i class="fa-solid fa-star fa-2xs" style="color: #ffd43b;"></i>
+                    <i class="fa-solid fa-star fa-2xs" style="color: #ffd43b;"></i>
+                    <i class="fa-solid fa-star fa-2xs" style="color: gray;"></i>
+                </div>
+                <div style="display: block; width: 100%;">
+                    <p>500 viewers</p>
+                </div>
+                
+            </div>
+            <div>
+                <p class="firstP">3.0</p>
+                <p>kilometers</p>
+            </div>
+            <div>
+                <p class="firstP">15-30</p>
+                <p>minutes</p>
+            </div>
+            <div>
+                <p class="firstP">20 NIS</p>
+                <p>Dilevery fee</p>
+            </div>
+        
+        </div>
+        </a>
+
+        <a href="#" class="goToMenu">
+        <div class="card" style="display: block; height: 20%; float: left;">
+            
+            <div style="width: 45%; ">
+                <img class="float-start" src="https://scontent.fjrs27-1.fna.fbcdn.net/v/t39.30808-6/438841819_122103804752288873_828824864381686929_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=5f2048&_nc_ohc=pGVzZIFIEmIQ7kNvgFlWhlC&_nc_ht=scontent.fjrs27-1.fna&cb_e2o_trans=t&oh=00_AYCsDVqScHfNNGcQmYQ_puqSXr7AdRWh-1IlWTASDPt5tw&oe=6655B184" height="100%" width="20%"/>
+                <h3 class="float-start " style="margin: 5px 0 0 5px;">kaza meze</h3>
+            </div>
+            <div>
+                <div style="display: block; width: 100%;">
+                    <i class="fa-solid fa-star fa-2xs" style="color: #ffd43b;"></i>
+                    <i class="fa-solid fa-star fa-2xs" style="color: #ffd43b;"></i>
+                    <i class="fa-solid fa-star fa-2xs" style="color: #ffd43b;"></i>
+                    <i class="fa-solid fa-star fa-2xs" style="color: #ffd43b;"></i>
+                    <i class="fa-solid fa-star fa-2xs" style="color: gray;"></i>
+                </div>
+                <div style="display: block; width: 100%;">
+                    <p>553 viewers</p>
+                </div>
+                
+            </div>
+            <div>
+                <p class="firstP">3.4</p>
+                <p>kilometers</p>
+            </div>
+            <div>
+                <p class="firstP">17-32</p>
+                <p>minutes</p>
+            </div>
+            <div>
+                <p class="firstP">15 NIS</p>
+                <p>Dilevery fee</p>
+            </div>
+        
+        </div>
+        </a>
+
+        
+        <a href="logIn.html" class="goToMenu">
+        <div class="card" style="display: block; height: 20%; float: left;">
+            
+            <div style="width: 45%; ">
+                <img class="float-start" src="https://scontent.fjrs27-1.fna.fbcdn.net/v/t39.30808-6/433666830_122093232500265368_5964945522289532834_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_ohc=H0OHLU3YuIUQ7kNvgG0u9b9&_nc_ht=scontent.fjrs27-1.fna&cb_e2o_trans=t&oh=00_AYCaXmlDXAAGmayg2BtHp9OBmg15IiSl9_CAqe-xVjrv1w&oe=6655B9C1" height="100%" width="20%"/>
+                <h3 class="float-start " style="margin: 5px 0 0 5px;">مطعم ومشاوي طولكرم</h3>
+            </div>
+            <div>
+                <div style="display: block; width: 100%;">
+                    <i class="fa-solid fa-star fa-2xs" style="color: #ffd43b;"></i>
+                    <i class="fa-solid fa-star fa-2xs" style="color: #ffd43b;"></i>
+                    <i class="fa-solid fa-star fa-2xs" style="color: #ffd43b;"></i>
+                    <i class="fa-solid fa-star fa-2xs" style="color: #ffd43b;"></i>
+                    <i class="fa-solid fa-star fa-2xs" style="color: #ffd43b;"></i>
+                </div>
+                <div style="display: block; width: 100%;">
+                    <p>1013 viewers</p>
+                </div>
+                
+            </div>
+            <div>
+                <p class="firstP">1.5</p>
+                <p>kilometers</p>
+            </div>
+            <div>
+                <p class="firstP">10-16</p>
+                <p>minutes</p>
+            </div>
+            <div>
+                <p class="firstP">10 NIS</p>
+                <p>Dilevery fee</p>
+            </div>
+        
+        </div>
+        </a>
+        
+        
+        <a href="logIn.html" class="goToMenu">
+        <div class="card" style="display: block; height: 20%; float: left;">
+            
+            <div style="width: 45%; ">
+                <img class="float-start" src="https://scontent.fjrs27-1.fna.fbcdn.net/v/t39.30808-6/276122992_499824128489721_8627525273374542680_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=5f2048&_nc_ohc=k0BagTOT04AQ7kNvgH-OX_0&_nc_ht=scontent.fjrs27-1.fna&cb_e2o_trans=t&oh=00_AYB9wfcRXikZvyGAO4XWWzAlW9QE5j1o00Y8oyVh3kbVsQ&oe=6655B367" height="100%" width="20%"/>
+                <h3 class="float-start " style="margin: 5px 0 0 5px;">Oregano</h3>
+            </div>
+            <div>
+                <div style="display: block; width: 100%;">
+                    <i class="fa-solid fa-star fa-2xs" style="color: #ffd43b;"></i>
+                    <i class="fa-solid fa-star fa-2xs" style="color: #ffd43b;"></i>
+                    <i class="fa-solid fa-star fa-2xs" style="color: #ffd43b;"></i>
+                    <i class="fa-solid fa-star fa-2xs" style="color: #ffd43b;"></i>
+                    <i class="fa-solid fa-star fa-2xs" style="color: #ffd43b;"></i>
+                </div>
+                <div style="display: block; width: 100%;">
+                    <p>746 viewers</p>
+                </div>
+                
+            </div>
+            <div>
+                <p class="firstP">1.0</p>
+                <p>kilometers</p>
+            </div>
+            <div>
+                <p class="firstP">12-20</p>
+                <p>minutes</p>
+            </div>
+            <div>
+                <p class="firstP">free</p>
+                <p>Dilevery fee</p>
+            </div>
+        
+        </div>
+        </a>
+
+        
+        <a href="logIn.html" class="goToMenu">
+        <div class="card" style="display: block; height: 20%; float: left;">
+            
+            <div style="width: 45%; ">
+                <img class="float-start" src="https://scontent.fjrs27-1.fna.fbcdn.net/v/t39.30808-6/421883630_916679060458783_3753456651969817136_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_ohc=66sf_YLVfmkQ7kNvgFjrqOV&_nc_ht=scontent.fjrs27-1.fna&cb_e2o_trans=t&oh=00_AYAlFgEC4Ydn_8b7j6oJLtnQmuoWNYgGoiKwKCgvvDsd_g&oe=66559F90" height="100%" width="20%"/>
+                <h3 class="float-start " style="margin: 5px 0 0 5px;">Wingo</h3>
+            </div>
+            <div>
+                <div style="display: block; width: 100%;">
+                    <i class="fa-solid fa-star fa-2xs" style="color: #ffd43b;"></i>
+                    <i class="fa-solid fa-star fa-2xs" style="color: #ffd43b;"></i>
+                    <i class="fa-solid fa-star fa-2xs" style="color: #ffd43b;"></i>
+                    <i class="fa-solid fa-star fa-2xs" style="color: #ffd43b;"></i>
+                    <i class="fa-solid fa-star fa-2xs" style="color: gray;"></i>
+                </div>
+                <div style="display: block; width: 100%;">
+                    <p>376 viewers</p>
+                </div>
+                
+            </div>
+            <div>
+                <p class="firstP">1.1</p>
+                <p>kilometers</p>
+            </div>
+            <div>
+                <p class="firstP">12-22</p>
+                <p>minutes</p>
+            </div>
+            <div>
+                <p class="firstP">free</p>
+                <p>Dilevery fee</p>
+            </div>
+        </div>
+        </a>
+
+ 
+         
+        
+    </body>
+</html>

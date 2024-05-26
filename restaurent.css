@@ -1,0 +1,108 @@
+   
+            #logIn{
+                display: none;
+                width: 30%;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                background-color: lightgray;
+                z-index: 1;
+                
+            }
+            #signUp{
+                z-index: 1;
+                display: none;
+                width: 30%;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                background-color: lightgray;
+                
+                
+            }
+            #signUp *,#logIn *{
+                
+                margin-bottom: 25px;
+            }
+            a{
+                text-decoration: none;
+
+            }
+            a:hover{
+                text-decoration: underline;
+            }
+            p{
+                text-align: justify center;
+                padding: 5px;
+            }
+            
+            #forgetPassword{
+                margin-left: 10px;
+            }
+            
+            #goLogin a span{
+                margin: 0px 50px 0 0;
+                width: 80px;
+                font-size: large;
+                font-weight: 500;
+                float: right;
+
+                color: darkblue;
+                
+            }
+            #goLogin :hover{
+                color: white;
+                background-color: cornflowerblue;
+                
+            }
+            #close :hover{
+                cursor: pointer;
+            }
+
+
+
+            .searchArea{
+                display: inline-block;
+                background-color: white;
+                margin-left: 30px;
+                width: 20%;
+                border-radius: 5px;
+            }
+            .navList{
+                padding-top: 79px;
+                padding-left: 10px;
+            }
+            .navList ul{
+                display: block;
+                list-style: none;
+            }
+            .navList ul li{
+                display: inline-block;
+            }
+            .navList ul li{
+                width: 7%;
+            }
+            .navList ul .active{
+                color: blue;
+                text-decoration: underline;
+            }
+            
+            .card div{
+                height: 100%;
+                width: 12%;
+                display: inline;
+                float: left;
+            }
+            .card p{
+                margin-bottom: -10px;
+                color: gray;
+            }
+            .firstP{
+                font-weight: bold;
+            }
+            .goToMenu:hover div{
+                background-color: lavender;
+            }
+         

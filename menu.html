@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>menu</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script type="text/javascript" src="signUp.js"></script>
+        <link rel="stylesheet" href="menu.css"/>
+    </head>
+
+    <body>
+
+        <header style="background-color: dodgerblue; padding-top: 10px; position: fixed; width: 100%; height: 10%;">
+            <div class="p-2">
+                <a href="index.html"><h2 class="float-start text-white" style="padding-left: 15px;">delivery.com</h2></a>
+                
+                    <input type="text" class="form-control rounded searchArea" placeholder="search the menu"/>
+                    
+                    
+                
+                <span id="goLogin" >
+                    <a href="#" onclick="logIn()"><span class="border border-primary rounded-pill text-center">Log in</span></a>
+                </span>    
+            </div>    
+        </header>
+
+        <div class="container text-center rounded card" id="logIn">
+            <div> <a id="close" onclick="closeLogin()"><i class="fa fa-times float-end m-3"></i></a>
+            </div>
+             <form>
+             
+                 <br>
+                 <h6 class="mt-3">Log in into your account</h6>
+                 <a href="#" onclick="signUp()">New to delivery.com?Sign up here</a>
+                 <br><br>
+                 <input type="email" class="form-control" required placeholder="Email Adress"/>
+                 
+                 <input type="password" class="form-control" required placeholder="Password"/>
+                 
+                 <input type="submit" onclick="closeLogin()" class="form-control bg-primary text-white" id="submit" value="Log In" />
+                 
+                 <input type="checkbox" id="staySigned" name="staySigned" />
+                 
+                 <label for="staySigned" class="text-muted">Keep me logged in</label>
+                 
+                 <a href="#" id="forgetPassword">Forget password?</a>
+                 
+                 <p> By clicking on "Log In" you agree to the <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a> of delivery.com</p>
+             </form>
+ 
+         </div>
+
+         <div class="container text-center rounded card" id="signUp">
+             <div>
+             <a id="close" onclick="closeSignup()"><i class="fa fa-times float-end m-3"></i></a>
+             </div>
+             <form>
+                 <br>    
+                 <h5 class="mt-3 logo">delivery.com</h5>
+                 <h6>Sign up to continue</h6>
+                 <a href="#"  onclick="logIn()">Already have an account? Log in here</a>
+                 <br><br>
+                 <input type="text" class="form-control" placeholder="First name" required/>
+                 <input type="text" class="form-control" placeholder="Last name" required/>
+                 <input type="email" class="form-control" placeholder="Email Address" required/>
+                 <input type="password" class="form-control" placeholder="Password" required/>
+                 <input type="submit" value="Sign Up" onclick="closeSignup()" class="form-control bg-primary text-white" />
+                 
+                 <input type="checkbox" id="staySigned" name="staySigned" />
+                 
+                 <label for="staySigned" class="text-muted">Keep me logged in</label>
+                 
+                 <p> By clicking on "Sign Up" you agree to the <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a> of delivery.com</p>
+             
+             </form>
+        </div>       
+        
+        <div class="navList">
+                  <ul>
+                    <li class="active">
+                      <a   href="restaurents.html"><span class="fa fa-hamburger"><span> food</span></span></a>
+                    </li>
+                    <li>
+                      <a class="text-muted" href="#"><span  class="fa-solid fa-martini-glass"><span> drink</span></span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="text-muted" href="#"><span class="fa fa-shopping-cart "><span> market</span></span></a>
+                    </li>
+                  </ul>
+              
+        </div> 
+
+        
+
+        <div class="menuList">
+        <div class="card col-3 item">
+            <img src="https://scontent.fjrs27-1.fna.fbcdn.net/v/t39.30808-6/343645609_2597121720429078_2623702101477281810_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=5f2048&_nc_ohc=FP8a7fThM6kQ7kNvgELHs5m&_nc_ht=scontent.fjrs27-1.fna&cb_e2o_trans=t&oh=00_AYCDHgO8FSR9iAaMY4-VQl-yGPT9MblLfNfP8EXkskgCEQ&oe=665668A7" width="100%" height="70%"/>
+            
+            <div class="quantity text-center">
+                <div>21 NIS</div>
+                <div>
+                    <button class="btn btn-danger" >-</button>
+                    <span><h6 style="display: inline;">0</h6></span>
+                    <button class="btn btn-success" >+</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card col-3 item">
+            <img src="https://scontent.fjrs27-1.fna.fbcdn.net/v/t39.30808-6/344168568_5796138690494539_7087020402672351634_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=5f2048&_nc_ohc=yjh45T2CMwEQ7kNvgERdggo&_nc_ht=scontent.fjrs27-1.fna&cb_e2o_trans=t&oh=00_AYD6LIJCZdqrECCNwNdHfyW_rpjUmdPtoDiY0a-KIosABA&oe=665687AD" width="100%" height="70%"/>
+            
+            <div class="quantity text-center">
+                <div>28 NIS</div>
+                <div>
+                    <button class="btn btn-danger" onclick="decrease(this)">-</button>
+                    <span><h6 style="display: inline;">0</h6></span>
+                    <button class="btn btn-success" onclick="insrease(this)">+</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card col-3 item">
+            <img src="https://scontent.fjrs27-1.fna.fbcdn.net/v/t39.30808-6/344593356_928988765101153_9152590187801487059_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=5f2048&_nc_ohc=8-y33QHkQ20Q7kNvgGtMx5O&_nc_ht=scontent.fjrs27-1.fna&cb_e2o_trans=t&oh=00_AYCgSxRWHI8BVDPi8xwcZCRw4KnFmjqg8cEq2zs28tE_hg&oe=665661E4" width="100%" height="70%"/>
+            
+            <div class="quantity text-center">
+                <div>22 NIS</div>
+                <div>
+                    <button class="btn btn-danger" onclick="decrease(this)">-</button>
+                    <span><h6 style="display: inline;">0</h6></span>
+                    <button class="btn btn-success" onclick="insrease(this)">+</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card col-3 item">
+            <img src="https://scontent.fjrs27-1.fna.fbcdn.net/v/t39.30808-6/343571733_629860205283684_3902102509288486783_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=5f2048&_nc_ohc=dQyyMy0wlsgQ7kNvgG1uPf-&_nc_ht=scontent.fjrs27-1.fna&cb_e2o_trans=t&oh=00_AYCW0pVhiwY_l14NudFYFsCVvvuRs60Y9ZmOMkxm3v0z1Q&oe=66566AED" width="100%" height="70%"/>
+            
+            <div class="quantity text-center">
+                <div>12 NIS</div>
+                <div>
+                    <button class="btn btn-danger" onclick="decrease(this)">-</button>
+                    <span><h6 style="display: inline;">0</h6></span>
+                    <button class="btn btn-success" onclick="insrease(this)">+</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card col-3 item">
+            <img src="https://scontent.fjrs27-1.fna.fbcdn.net/v/t39.30808-6/375991034_630056765922014_265580304829003724_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=5f2048&_nc_ohc=cwVFxAj0td0Q7kNvgHsYvWI&_nc_ht=scontent.fjrs27-1.fna&cb_e2o_trans=t&oh=00_AYAkd4RJfcDjWkWSngl1N94z36CApm8BQeggXvoTRtOVgA&oe=66570159" width="100%" height="70%"/>
+            
+            <div class="quantity text-center">
+                <div>14 NIS</div>
+                <div>
+                    <button class="btn btn-danger" onclick="decrease(this)">-</button>
+                    <span><h6 style="display: inline;">0</h6></span>
+                    <button class="btn btn-success" onclick="increase(this)">+</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card col-3 item">
+            <img src="https://scontent.fjrs27-1.fna.fbcdn.net/v/t39.30808-6/344558492_752253016591593_8779301995793627258_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=5f2048&_nc_ohc=A7pVukr_dx0Q7kNvgGFO1xc&_nc_ht=scontent.fjrs27-1.fna&cb_e2o_trans=t&oh=00_AYBLtWW4P_-E5We2zyKNFQeInthXDgIz-Qzs9ucIZ0CWeQ&oe=6656D2C6" width="100%" height="70%"/>
+            
+            <div class="quantity text-center">
+                <div>25 NIS</div>
+                <div>
+                    <button class="btn btn-danger" onclick="decrease(this)">-</button>
+                    <span><h6 style="display: inline;">0</h6></span>
+                    <button class="btn btn-success" onclick="increase(this)">+</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card col-3 item">
+            <img src="https://scontent.fjrs27-1.fna.fbcdn.net/v/t39.30808-6/430716723_122136280844101534_4441514157884620881_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=5f2048&_nc_ohc=-Es_-6_u4a4Q7kNvgHzpv1m&_nc_ht=scontent.fjrs27-1.fna&cb_e2o_trans=t&oh=00_AYA9MDw6E_4_A4Z8Tfv3DZGUIFKhcnIlxl0HrXD7wHG3vw&oe=6656D506" width="100%" height="70%"/>
+            
+            <div class="quantity text-center">
+                <div>2 NIS</div>
+                <div>
+                    <button class="btn btn-danger" onclick="decrease(this)">-</button>
+                    <span><h6 style="display: inline;">0</h6></span>
+                    <button class="btn btn-success" onclick="increase(this)">+</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card col-3 item">
+            <img src="https://scontent.fjrs27-1.fna.fbcdn.net/v/t39.30808-6/437938829_122144735696101534_8764825777200565706_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=5f2048&_nc_ohc=33fEZJiGdQsQ7kNvgEvJXdN&_nc_ht=scontent.fjrs27-1.fna&cb_e2o_trans=t&oh=00_AYBV-FtrzOy0kVUXEa9N2a1YaSCp1TVTQIHMdDD8TPhwgw&oe=6656EC55" width="100%" height="70%"/>
+            
+            <div class="quantity text-center">
+                <div>2 NIS</div>
+                <div>
+                    <button class="btn btn-danger" onclick="decrease(this)">-</button>
+                    <span><h6 style="display: inline;">0</h6></span>
+                    <button class="btn btn-success" onclick="increase(this)">+</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card col-3 item">
+            <img src="https://scontent.fjrs27-1.fna.fbcdn.net/v/t39.30808-6/418986596_122133703916101534_1872743796939137208_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=5f2048&_nc_ohc=lttRsRfDd6oQ7kNvgG7HroN&_nc_ht=scontent.fjrs27-1.fna&cb_e2o_trans=t&oh=00_AYDvIwKEhSAYp_tS4jmBNsNvGxG1SOT5KYkp3QQR3U6C_w&oe=66570791" width="100%" height="70%"/>
+            
+            <div class="quantity text-center">
+                <div>2 NIS</div>
+                <div>
+                    <button class="btn btn-danger" onclick="decrease(this)">-</button>
+                    <span><h6 style="display: inline;">0</h6></span>
+                    <button class="btn btn-success" onclick="increase(this)">+</button>
+                </div>
+            </div>
+        </div>
+
+        </div>
+        
+        
+
+
+    </body>
+</html>

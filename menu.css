@@ -1,0 +1,106 @@
+
+            
+#logIn{
+    display: none;
+    width: 30%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: lightgray;
+    z-index: 1;
+    
+}
+#signUp{
+    z-index: 1;
+    display: none;
+    width: 30%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: lightgray;
+    
+    
+}
+#signUp *,#logIn *{
+    
+    margin-bottom: 25px;
+}
+a{
+    text-decoration: none;
+
+}
+a:hover{
+    text-decoration: underline;
+}
+p{
+    text-align: justify center;
+    padding: 5px;
+}
+
+#forgetPassword{
+    margin-left: 10px;
+}
+
+#goLogin a span{
+    margin: 0px 50px 0 0;
+    width: 80px;
+    font-size: large;
+    font-weight: 500;
+    float: right;
+
+    color: darkblue;
+    
+}
+#goLogin :hover{
+    color: white;
+    background-color: cornflowerblue;
+    
+}
+#close :hover{
+    cursor: pointer;
+}
+
+
+
+.searchArea{
+    display: inline-block;
+    background-color: white;
+    margin-left: 30px;
+    width: 20%;
+    border-radius: 5px;
+}
+.navList{
+    padding-top: 79px;
+    padding-left: 10px;
+    border-bottom: 1px solid lightgray;
+}
+.navList ul{
+    display: block;
+    list-style: none;
+}
+.navList ul li{
+    display: inline-block;
+}
+.navList ul li{
+    width: 7%;
+}
+.navList ul .active{
+    color: blue;
+    text-decoration: underline;
+}
+
+
+.item{
+    display: inline-block;
+    margin: 5px 10px 10px 20px;
+}
+.quantity{
+    margin: 10px 0;               
+}
+.menuList{
+    position: absolute;
+    left: 13%;
+    z-index: -1;
+}

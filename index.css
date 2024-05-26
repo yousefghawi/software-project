@@ -1,0 +1,100 @@
+body,html{
+    width: 100%;
+}
+body{
+    background-image: url("https://res.cloudinary.com/delivery-com/image/fetch/f_auto/https%3A%2F%2Fs3.amazonaws.com%2Fs3.delivery.com%2FHomepage%2Fdefault-small.jpg");
+} 
+
+#logIn{
+    display: none;
+    width: 30%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: lightgray;
+    z-index: 1;
+    
+}
+#signUp{
+    z-index: 1;
+    display: none;
+    width: 30%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: lightgray;
+    
+    
+}
+#signUp *,#logIn *{
+    
+    margin-bottom: 25px;
+}
+
+#forgetPassword{
+    margin-left: 10px;
+}
+
+#goLogin a span{
+    margin: 20px 50px 0 0;
+    width: 80px;
+    font-size: large;
+    font-weight: 500;
+    float: right;
+
+    color: darkblue;
+    
+}
+#goLogin :hover{
+    color: white;
+    background-color: cornflowerblue;
+    
+}
+#close :hover{
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+
+}
+a:hover{
+    text-decoration: underline;
+}
+p{
+    text-align: justify center;
+    padding: 5px;
+}
+   
+
+
+.logo{
+    font-family: cursive;
+}
+
+.searchPannel{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #edf0ee;
+    color: mediumblue;
+    width: 40%;
+    height: 30%;
+}
+.typeOfRequest{
+    
+    color: mediumblue;
+    border-radius: 50%;
+    background-color: white;
+    
+    padding: 15px;
+    width: 10px;
+    height: 10px;
+}
+.setLocation{
+    display: inline-block;
+    width: 60%;
+}
